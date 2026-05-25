@@ -269,6 +269,16 @@ body.mode-opening #bottomSuggestGroup {
   background-color: var(--white);
 }
 
+.hole.clickable-hole,
+.hole.score-hole {
+  cursor: pointer;
+}
+
+.hole.clickable-hole:hover,
+.hole.score-hole:hover {
+  background-color: var(--gray);
+}
+
 body.camera-mask-on .punch-paper,
 body.image-mask-on .punch-paper {
   background-color: transparent;
@@ -1143,7 +1153,6 @@ body.mode-suggest #nav-compare {
 .hole.score-hole {
   background-color: #ffffff;
   box-shadow: 0 0 6px rgba(17, 85, 204, 0.22);
-  cursor: pointer;
   animation: scoreGlowBlink 1.5s steps(1) infinite;
   transition:
     opacity 0.2s ease,
@@ -1151,7 +1160,7 @@ body.mode-suggest #nav-compare {
 }
 
 .hole.score-hole:hover {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .hole.score-hole.score-active {
