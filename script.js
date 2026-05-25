@@ -680,7 +680,7 @@ function appendEmptyScoreWordCols(target, count) {
   }
 }
 
-function createScoreWordGrid(word, variant = "top") {
+function createScoreWordGrid(word, variant = "top", maxScale = Infinity) {
   const grid = document.createElement("div");
   grid.className =
     variant === "compare"

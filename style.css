@@ -279,6 +279,14 @@ body.mode-opening #bottomSuggestGroup {
   background-color: var(--gray);
 }
 
+#topTape .hole.clickable-hole:hover,
+body.camera-mask-on #topTape .hole.clickable-hole:hover,
+body.image-mask-on #topTape .hole.clickable-hole:hover {
+  background-color: var(--gray);
+  cursor: pointer;
+  opacity: 1;
+}
+
 body.camera-mask-on .punch-paper,
 body.image-mask-on .punch-paper {
   background-color: transparent;
